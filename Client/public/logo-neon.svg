@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Black background -->
+  <rect width="512" height="512" rx="80" fill="#000000"/>
+  
+  <!-- Grid lines for futuristic effect -->
+  <path d="M50 50H462" stroke="#00FFFF" stroke-width="1" stroke-opacity="0.1"/>
+  <path d="M50 150H462" stroke="#00FFFF" stroke-width="1" stroke-opacity="0.1"/>
+  <path d="M50 250H462" stroke="#00FFFF" stroke-width="1" stroke-opacity="0.1"/>
+  <path d="M50 350H462" stroke="#00FFFF" stroke-width="1" stroke-opacity="0.1"/>
+  <path d="M50 450H462" stroke="#00FFFF" stroke-width="1" stroke-opacity="0.1"/>
+  
+  <path d="M50 50V462" stroke="#00FFFF" stroke-width="1" stroke-opacity="0.1"/>
+  <path d="M150 50V462" stroke="#00FFFF" stroke-width="1" stroke-opacity="0.1"/>
+  <path d="M250 50V462" stroke="#00FFFF" stroke-width="1" stroke-opacity="0.1"/>
+  <path d="M350 50V462" stroke="#00FFFF" stroke-width="1" stroke-opacity="0.1"/>
+  <path d="M450 50V462" stroke="#00FFFF" stroke-width="1" stroke-opacity="0.1"/>
+  
+  <!-- Main logo - stylized "P" for ProjectTaskr -->
+  <path d="M170 130V382" stroke="#00FFFF" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M170 150H280C315 150 340 175 340 210C340 245 315 270 280 270H170" stroke="#00FFFF" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Task checkmark -->
+  <path d="M230 330L260 360L330 290" stroke="#9D00FF" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Glow effects -->
+  <path d="M170 130V382" stroke="#00FFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+  <path d="M170 150H280C315 150 340 175 340 210C340 245 315 270 280 270H170" stroke="#00FFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+  <path d="M230 330L260 360L330 290" stroke="#9D00FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow2)"/>
+  
+  <!-- Filters for glow effects -->
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="glow2" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+</svg>
