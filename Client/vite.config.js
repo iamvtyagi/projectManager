@@ -15,10 +15,9 @@ export default defineConfig(({ command, mode }) => {
     server: {
       proxy: {
         "/api": {
-          target: env.VITE_API_URL || "http://localhost:5001/api",
+          target: "http://localhost:5001",
           changeOrigin: true,
-          secure: true,
-          rewrite: (path) => path.replace(/^\/api/, ""),
+          secure: false,
         },
       },
     },
